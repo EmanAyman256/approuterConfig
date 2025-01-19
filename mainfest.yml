@@ -12,7 +12,7 @@ applications:
     destinations: >
       [
           {
-              "name": "main-app",
+              "name": "sd-app",
               "url": "https://sd-app-humble-parrot-uu.cfapps.us10-001.hana.ondemand.com/",
               "forwardAuthToken": true
 
@@ -20,7 +20,7 @@ applications:
           ,
           {
               "name":"btpsd",
-              "url":"https://web-unexpected-wolverine-fn.cfapps.us10-001.hana.ondemand.com/",
+              "url":"https://btpsd.cfapps.us10-001.hana.ondemand.com/",
               "forwardAuthToken": true
           }
       ]

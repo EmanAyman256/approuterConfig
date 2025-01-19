@@ -5,15 +5,16 @@
       {
         "source": "^/(.*)$",
         "target": "$1",
-        "destination": "main-app",
+        "destination": "sd-app",
         "authenticationType": "xsuaa"
       },
       {
-        "source": "^/btpsd/(.*)$",
+        "source": "^/api/(.*)$",
         "target": "$1",
         "destination": "btpsd",
         "csrfProtection": false,
         "authenticationType": "xsuaa"
       }
     ]
-  }
+
+}
