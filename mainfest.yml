@@ -1,0 +1,21 @@
+---
+applications:
+- name: myapprouter
+  random-route: true
+  path: myapprouter
+  memory: 128M
+  buildpacks: 
+  - nodejs_buildpack
+  services:
+  - name: nodeuaa
+  env:
+    destinations: |
+      [
+          {
+              "name": "main-app",
+              "url": "https://sd-app.cfapps.ap21.hana.ondemand.com/",
+              "forwardAuthToken": true
+
+          }
+      ]
+    TENANT_HOST_PATTERN: '^(.*)\\.cfapps.ap21.hana.ondemand.com\.com$'
