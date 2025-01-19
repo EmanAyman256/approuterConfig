@@ -16,11 +16,12 @@ applications:
               "url": "https://sd-app-humble-parrot-uu.cfapps.us10-001.hana.ondemand.com/",
               "forwardAuthToken": true
 
-          },
-           {
-          "name":"btpsd",
-          "url":"https://btpsd.cfapps.us10-001.hana.ondemand.com/",
-          "forwardAuthToken": true
-        }
+          }
+          ,
+          {
+              "name":"btpsd",
+              "url":"https://web-unexpected-wolverine-fn.cfapps.us10-001.hana.ondemand.com/",
+              "forwardAuthToken": true
+          }
       ]
     TENANT_HOST_PATTERN: '^(.*)\\.cfapps.us10-001.ondemand.com\.com$'
