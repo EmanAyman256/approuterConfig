@@ -9,13 +9,18 @@ applications:
   services:
   - name: nodeuaa
   env:
-    destinations: |
+    destinations: >
       [
           {
               "name": "main-app",
-              "url": "https://sd-app.cfapps.ap21.hana.ondemand.com/",
+              "url": "https://sd-app-humble-parrot-uu.cfapps.us10-001.hana.ondemand.com/",
               "forwardAuthToken": true
 
-          }
+          },
+           {
+          "name":"btpsd",
+          "url":"https://btpsd.cfapps.us10-001.hana.ondemand.com/",
+          "forwardAuthToken": true
+        }
       ]
-    TENANT_HOST_PATTERN: '^(.*)\\.cfapps.ap21.hana.ondemand.com\.com$'
+    TENANT_HOST_PATTERN: '^(.*)\\.cfapps.us10-001.ondemand.com\.com$'
