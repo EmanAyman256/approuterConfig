@@ -7,19 +7,22 @@ applications:
   buildpacks: 
   - nodejs_buildpack
   services:
-  - name: nodeuaa
+     - nodeuaa
+     - backend-dest
+     - frontend-sdapp
+
   env:
     destinations: >
       [
           {
-              "name": "sd-app",
+              "name": "frontend-sdapp",
               "url": "https://sd-app-humble-parrot-uu.cfapps.us10-001.hana.ondemand.com/",
               "forwardAuthToken": true
 
           }
           ,
           {
-              "name":"btpsd",
+              "name":"backend-dest",
               "url":"https://btpsd.cfapps.us10-001.hana.ondemand.com/",
               "forwardAuthToken": true
           }
