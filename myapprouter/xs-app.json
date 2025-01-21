@@ -5,6 +5,7 @@
       "source": "^/backend-dest/(.*)$",
       "target": "$1",
       "destination": "backend-dest",
+      "csrfProtection": false,
       "authenticationType": "xsuaa"
     },
     {
